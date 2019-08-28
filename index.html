@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // Задание 1: Дан массив с элементами 'Привет, ', 'мир' и '!'. Необходимо вывести на экран фразу 'Привет, мир!'.
+
+    // let hi=('hello, ');
+    // let world=('world');
+    // let sign=('!');
+    // let sent=hi.concat(world).concat(sign);
+    // console.log(sent);
+
+    //     Задание 2: Решим немного другую задачу: дан массив с элементами 'Привет, ', 'мир' и '!'.
+    //     Необходимо записать в переменную text фразу 'Привет, мир!',
+    //     а затем вывести на экран содержимое этой переменной.
+
+   // let array=new Array('Hello',', ', 'world', '!');
+   //  let text=array.join('');
+   //  console.log(text);
+
+    //     Задание 3: Задача. Дан массив ['Привет, ', 'мир', '!'].
+    //     Необходимо записать в нулевой элемент этого массива слово 'Пока, '
+    // (то есть вместо слова 'Привет, ' будет 'Пока, ').
+
+    // let array=new Array('Bye', ',','world','!');
+    // let text=array.join('');
+    // console.log(text);
+    //
+    // array.shift();
+    // array.unshift('Hello');
+    //  let text1=array.join('');
+    //  console.log(text1);
+
+    // Задание 4: Создайте массив arr с элементами 2, 5, 3, 9. Умножьте первый элемент массива на второй,
+    //     а третий элемент на четвертый. Результаты сложите, присвойте переменной result.
+    // Выведите на экран значение этой переменной.
+
+    // let arr=new Array(2,5,4,9);
+    // let result=arr[0]*arr[1]+arr[2]*arr[3];
+    // console.log(result);
+
+    //     Задание 5: Написать функцию, определяющую среднее арифметическое элементов передаваемого ей массива.
+
+   //  let arr=new Array(2,5,4,9);
+    //  function avg(array) {
+    //      let res=0;
+    //      for (let i=0;i<array.length;i++){
+    //           res+=array[i];
+    //          console.log(res);
+    //      }
+    //      let result=res/array.length;
+    //      console.log(result);
+    //
+    //  }
+    //
+    // avg(arr);
+
+    //     Задание 6: Написать функцию, определяющую количество положительных, отрицательных и нулевых элементов передаваемого ей массива.
+
+    function func(array) {
+        let plus=0;
+        let zero=0;
+        let minus=0;
+        for (let i=0;i<=array.length;i++){
+
+            if(array[i]<0)
+                minus++;
+            else if (array[i]==0)
+                zero++;
+            else
+                plus++;
+        }
+        console.log('there is ' + minus+'  minus elements, '+ zero+' zeros '+ plus+' pluses');
+    }
+     let arr=new Array(2,5,4,9,0,-3,0,-6,-7,0);
+func(arr);
+</script>
+</body>
+</html>
