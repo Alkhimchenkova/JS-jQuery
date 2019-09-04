@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3 style="color: "></h3>
+<script>
+    let first=['мир','труд','май','папа','мама'];
+    let second=['работа','крокодил','динозавр','арбуз','діня'];
+    let third=['слива','абрикос','зебра','кентавр','железо'];
+    let forth=['красивый','яркий','зелёный','синий','невзрачный'];
+    let fivth=['работать','летать','кормить','ездить','делать'];
+    let colors=['red','blue','green','black','coral'];
+
+    let rand1=Math.floor(Math.random()*first.length);
+    let rand2=Math.floor(Math.random()*second.length);
+    let rand3=Math.floor(Math.random()*third.length);
+    let rand4=Math.floor(Math.random()*forth.length);
+    let rand5=Math.floor(Math.random()*fivth.length);
+
+    let randColors=Math.floor(Math.random()*colors.length);
+   //let phrase = <h2 style ="${randColors}"></h2>;
+
+    let phrase = first[rand1] + " " + second[rand2] + " " + third[rand3] + " " + forth[rand4] + " " +  fivth[rand5];
+    alert(phrase);
+</script>
+</body>
+</html>
